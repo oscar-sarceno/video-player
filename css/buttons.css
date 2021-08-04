@@ -1,0 +1,30 @@
+.button {
+    inline-size: 32px; /*La anchura del bloque*/
+    block-size: 32px; /*La altura del bloque*/
+    border: none;
+    background-color: transparent; /*Quitamos el color por defecto de los botones, también se puede utilizar unset, initial*/
+    /*background-repeat: no-repeat; /*Evita que el background se repita*/
+    /*background-position: center; /*Centra el background del boton*/
+    cursor: pointer;
+}
+
+.button:active { /*Pseudoclase: active funciona al momento de clikear*/
+    transform: scale(.9); /*La etiqueta trasnforma el selector, en este caso la escala en un 90% del 100%*/
+}
+
+
+#play {
+    background-image: url('../assets/images/play.svg');
+}
+
+#pause {
+    background-image: url('../assets/images/pause.svg');
+}
+
+#backward {
+    background-image: url('../assets/images/-10.svg');
+}
+
+#forward {
+    background-image: url('../assets/images/+10.svg');
+}

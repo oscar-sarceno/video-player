@@ -1,0 +1,74 @@
+@import './buttons.css';
+
+* {
+    color: white;
+}
+
+body {
+    /*background-color: #26B4BC;*/
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.wrapper {
+    max-inline-size: 900px;
+    margin: auto;
+}
+
+.player {
+    margin-block-start: 100px;
+    position: relative;
+}
+
+.player video{
+    inline-size: 100%;
+    aspect-ratio: 16/9; 
+    vertical-align: middle;
+    object-fit: cover; /*Le decimos que la portada del video se expanda más para que cubra los 16/9*/
+
+}
+
+.player-overlay {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.player-title {
+    color: white;
+    position: absolute;
+    inset-block-start: 0px;
+    inset-inline-start: 20px;
+}
+
+.player-actions {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    gap: 20px;
+}
+
+.player-progress {
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0;
+    display: flex;
+    padding: 10px 20px 10px 20px;
+}
+
+.player:hover .player-overlay {
+    background-color: Black;
+    opacity: 0.5;
+}
+
+.player-progress input {
+    flex: 1;
+    z-index: 2;
+}
+
+
